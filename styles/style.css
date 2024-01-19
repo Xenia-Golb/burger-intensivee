@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url("/Users/xenia_golb/Documents/projects_intensiv/burger intensive/fonts/Gilroy-Semibold.ttf");
+    src: url("../fonts/Gilroy-Semibold.ttf");
 }
 
 @font-face {
-    font-family: 'Merriweatcher';
-    src: url("/Users/xenia_golb/Documents/projects_intensiv/burger intensive/fonts/Merriweather-Black.ttf");
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather-Black.ttf");
 }
 
 body {
@@ -46,7 +46,7 @@ body {
 }
 
 .main {
-    background-image: url("/img/main_bg.png");
+    background-image: url("../img/main_bg.png");
     background-position: top center;
     overflow: hidden;
 }
