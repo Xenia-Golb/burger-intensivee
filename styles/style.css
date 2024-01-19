@@ -2,24 +2,29 @@
     margin: 0;
     padding: 0;
 }
+
 @font-face {
-    font-family:'Gilroy' ;
+    font-family: 'Gilroy';
     src: url("/Users/xenia_golb/Documents/projects_intensiv/burger intensive/fonts/Gilroy-Semibold.ttf");
 }
+
 @font-face {
     font-family: 'Merriweatcher';
     src: url("/Users/xenia_golb/Documents/projects_intensiv/burger intensive/fonts/Merriweather-Black.ttf");
 }
-body{
+
+body {
     background-color: #191411;
-    font-family: 'Gilroy',sans-serif;
+    font-family: 'Gilroy', sans-serif;
     color: white;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.button{
+
+.button {
     border-radius: 8px;
     background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
     width: 260px;
@@ -35,46 +40,56 @@ body{
     color: #191411;
     font-size: 18px;
 }
-.button:hover{
+
+.button:hover {
     background: linear-gradient(96deg, #ac6115 0%, #9E7A19 100%);
 }
-.main{
-    border-image: url("../img/main_bg.png");
+
+.main {
+    background-image: url("/img/main_bg.png");
     background-position: top center;
     overflow: hidden;
 }
 
-.header{
+.header {
     padding: 40px 0;
 }
-.header .container{
-display: flex;
+
+.header .container {
+    display: flex;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     vert-align: bottom;
 }
-.menu{
+
+.menu {
     margin-left: 191px;
 }
-.menu-list{
+
+.menu-list {
     list-style: none;
     display: flex;
 }
-.menu-item{
+
+.menu-item {
     margin-right: 88px;
 }
-.menu-item a{
+
+.menu-item a {
     text-decoration: none;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     cursor: pointer;
 }
-.menu-item a:hover{
+
+.menu-item a:hover {
     border-bottom: 2px solid white;
 }
-.currency{
+
+.currency {
     border: 1px solid white;
     border-radius: 5px;
     width: 45px;
@@ -87,39 +102,46 @@ display: flex;
     padding: 11px;
     box-sizing: border-box;
 }
-.main-content{
+
+.main-content {
     padding-top: 103px;
     padding-bottom: 199px;
 }
-.main-content .container{
+
+.main-content .container {
     position: relative;
 }
-.main-info{
+
+.main-info {
     max-width: 608px;
 }
-.main-small-info{
+
+.main-small-info {
     border-radius: 100px;
-    background-color:  #D3320F;
+    background-color: #D3320F;
     padding: 12px 16px;
     display: inline-block;
     font-size: 18px;
 }
-.main-title{
+
+.main-title {
     font-family: 'Merriweather', sans-serif;
     font-size: 120px;
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 56px;
 }
-.main-text{
+
+.main-text {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 56px;
 }
-.main-pict{
+
+.main-pict {
     position: absolute;
     top: -123px;
-    left:calc(100% - 991px);
+    left: calc(100% - 991px);
 }
