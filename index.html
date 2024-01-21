@@ -17,12 +17,12 @@
                 <div class="logo"><img src="./img/Logo.svg" alt="logo"></div>
                 <nav class="menu">
                     <ul class="menu-list">
-                        <li class="menu-item"><a href="#">Почему у нас</a></li>
-                        <li class="menu-item"><a href="#">Меню бургеров</a></li>
-                        <li class="menu-item"><a href="#">Оформление заказа</a></li>
+                        <li class="menu-item"><a data-link="why">Почему у нас</a></li>
+                        <li class="menu-item"><a data-link="products">Меню бургеров</a></li>
+                        <li class="menu-item"><a data-link="order">Оформление заказа</a></li>
                     </ul>
                 </nav>
-                <div class="currency" title="Изменить валюту">$</div>
+                <div class="currency" id="change-currency" title="Изменить валюту">$</div>
             </div>
         </header>
         <section class="main-content">
@@ -37,14 +37,14 @@
                         вкусом наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
                     </p>
                     <div class="main-action">
-                        <button class="button">Смотреть меню</button>
+                        <button class="button" id="main-action-button">Смотреть меню</button>
                     </div>
                     <img src="./img/main_burger.png" alt="burger" class="main-pict">
                 </div>
             </div>
         </section>
     </section>
-    <section class="why">
+    <section class="why" id="why">
         <div class="container">
             <div class="why-title common-title">почему нас выбирают</div>
             <div class="why-items">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <div class="product-title common-title">
                 выберите свой бургер
@@ -87,7 +87,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">8 $</div>
+                            <div class="products-item-price" data-base-price="8">8 $</div>
                             <div class="products-item-weight">360 гр</div>
                         </div>
                         <div class="products-item-action"><button class="button product-button" type="button">
@@ -110,7 +110,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">7 $</div>
+                            <div class="products-item-price" data-base-price="7">7 $</div>
                             <div class="products-item-weight">390 гр</div>
                         </div>
                         <div class="products-item-action"><button class="button product-button" type="button">
@@ -133,7 +133,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">10 $</div>
+                            <div class="products-item-price" data-base-price="10">10 $</div>
                             <div class="products-item-weight">420 гр</div>
                         </div>
                         <div class="products-item-action"><button class="button product-button" type="button">
@@ -156,7 +156,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">7 $</div>
+                            <div class="products-item-price" data-base-price="7">7 $</div>
                             <div class="products-item-weight">220 гр</div>
                         </div>
                         <div class="products-item-action"><button class="button product-button" type="button">
@@ -179,7 +179,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">8 $</div>
+                            <div class="products-item-price" data-base-price="8">8 $</div>
                             <div class="products-item-weight">220 гр</div>
                         </div>
                         <div class="products-item-action"><button class="button product-button" type="button">
@@ -202,7 +202,7 @@
                     </div>
                     <div class="products-item-extra">
                         <div class="products-item-info">
-                            <div class="products-item-price">9 $</div>
+                            <div class="products-item-price" data-base-price="9">9 $</div>
                             <div class="products-item-weight">320 гр</div>
                         </div>
                         <div class="products-item-action"><button class="button product-button" type="button">
@@ -219,7 +219,7 @@
             </div>
         </div>
     </section>
-    <section class="order">
+    <section class="order" id="order">
         <div class="container">
             <div class="order-title common-title">
                 оформление заказа
@@ -230,15 +230,15 @@
                     заказа</div>
                 <div class="order-form-inputs">
                     <div class="order-form-input">
-                        <input type="text" placeholder="Ваш заказ">
+                        <input type="text" placeholder="Ваш заказ" id="burger">
                     </div>
                     <div class="order-form-input">
-                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваше имя" id="name">
                     </div>
                     <div class="order-form-input">
-                        <input type="text" placeholder="Ваш телефон">
+                        <input type="text" placeholder="Ваш телефон" id="phone">
                     </div>
-                    <button class="button">Оформить заказ</button>
+                    <button class="button" id="order-action">Оформить заказ</button>
                 </div>
             </div>
         </div>
@@ -249,6 +249,8 @@
             <div class="rights">Все права защищены</div>
         </div>
     </footer>
+
+    <script src="./skript.js"></script>
 </body>
 
 </html>
